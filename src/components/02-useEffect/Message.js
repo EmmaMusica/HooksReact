@@ -5,6 +5,7 @@ export const Message = () => {
     const [coords, setCoords] = useState({x:0, y:0})
 
     const {x, y} = coords
+
     useEffect(() => {
 
         const mouseMove = (e) => {
@@ -14,7 +15,7 @@ export const Message = () => {
 
         window.addEventListener('mousemove', mouseMove)
         
-        return () => {
+        return () => { //El return en el useEffect se utiliza que el sistema entienda que una accion, o funcion deja de tener efecto.
             
             window.removeEventListener('mousemove', mouseMove)
         }

@@ -1,3 +1,7 @@
+/* Utilizamose l useRef siempre que querramos mantener una referencia. */
+
+
+
 import React, { useRef } from 'react'
 import '../02-useEffect/effects.css'
 
